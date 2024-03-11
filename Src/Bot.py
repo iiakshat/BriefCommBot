@@ -2,13 +2,12 @@ import os
 import Logger
 import random
 import logging
+from config import *
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 import Downloader, Speech_to_Text, Summarizer
 
 log = logging.getLogger(__name__)
 
-BOT_TOKEN = '6917486394:AAEtNxNZyvdI9rcrAt6DI4Q5mcNQsYSDuTo'
-BOT_USERNAME = "@BriefcommBot"
 user = ''
 summary = 'UNAVAILABLE. Please share a text, an audio or a video file to get started.'
 transcript = ''
